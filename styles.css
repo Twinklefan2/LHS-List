@@ -1,0 +1,134 @@
+:root {
+  /* COLOR */
+  --colorDarkest: #220E24;
+  --colorDark: #342056;
+  --colorLight: #5454C5;
+  --colorLightest: #639CD9;
+  /* FONT */
+  --font1: 'Atma', monospace;
+  --font2: 'Inter', monospace;
+}
+* {
+    margin: 0;
+  }
+/* DIV STYLING */
+.titleDiv {
+  background-color: var(--colorDarkest);
+  height: 500px;
+  margin-top: 0!important;
+}
+.nextDiv {
+  background-color: var(--colorDark);
+  height: auto;
+  min-height: 300px;
+  margin-top: 0!important;
+  padding: 80px 150px;
+}
+/* MAIN DIV TEXT STYLING */
+h1 {
+  font-size: 7rem;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  top: 30%;
+  color: var(--colorLightest);
+  font-family: var(--font1);
+}
+h2 {
+  font-family: var(--font2);
+  font-size: 3rem;
+  color: var(--colorLight);
+  text-align: center;
+  position: relative;
+  top: 28%;
+}
+h3 {
+  font-family: var(--font1);
+  font-size: 4rem;
+  color: var(--colorLightest);
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 50px;
+}
+h4 {
+  font-family: var(--font2);
+  font-size: 2.5rem;
+  color: var(--colorLight);
+  margin-bottom: 0px;
+  text-align: center;
+  margin-top: 50px;
+}
+h5 {
+  font-family: var(--font1);
+  font-size: 2.5rem;
+  color: var(--colorLightest);
+  margin: 30px 0;
+  text-align: center;
+}
+h6 {
+  font-family: var(--font1);
+  font-size: 2rem;
+  margin: 0 15px 10px 15px;
+  text-align: center;
+  display: inline;
+}
+h6 a {
+    text-decoration: none;
+    color: var(--colorLight);
+}
+h6 a:active {
+  color: var(--colorLightest)
+}
+li {
+  text-align: left;
+  list-style-type: '‣ ';
+  font-size: 2rem;
+}
+/* NAV BAR */
+header {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--colorDarkest);
+  font-family: var(--font1);
+}
+header a {
+  float: left;
+  color: var(--colorLightest);
+  font-family: var(--font1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+}
+header a:hover {
+  background-color: var(--colorLight);
+  font-family: var(--font1);
+  color: var(--colorDarkest);
+}
+header a.active {
+  background-color: var(--colorLightest);
+  font-family: var(--font1);
+  color: var(--colorDarkest);
+}
+footer {
+  overflow: hidden;
+  position: relative;
+  background-color: var(--colorDarkest);
+  font-family: var(--font1);
+}
+/* SMALLER SCREEN */
+@media screen and (max-width: 985px) {
+  .navText {
+    display: none;
+  }
+  .Title {
+    font-size: 4rem;
+  }
+  .subTitle {
+    font-size: 2rem;
+  }
+  .titleDiv {
+    height: 300px;
+  }
+}
